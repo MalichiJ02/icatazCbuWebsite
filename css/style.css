@@ -1589,6 +1589,24 @@ button {
 }
 
 
+.social-links {
+    display: flex;
+    gap: 18px;
+}
+
+
+.social-links a {
+    color: #999999;
+
+    transition: color 0.25s ease;
+}
+
+
+.social-links a:hover {
+    color: var(--blue);
+}
+
+
 /* ========================================
    MOBILE
 ======================================== */
@@ -1662,6 +1680,17 @@ button {
         flex-direction: column;
 
         gap: 15px;
+    }
+
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+
+    .social-links {
+        width: 100%;
+        justify-content: flex-start;
     }
 
 

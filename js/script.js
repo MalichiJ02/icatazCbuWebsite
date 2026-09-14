@@ -39,14 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 guideText.textContent = topic.text;
             }
 
-            button.classList.add('completed');
+            const isCompleted = button.classList.toggle('completed');
+            button.setAttribute('aria-pressed', String(isCompleted));
 
             const completedCount = document.querySelectorAll('.guide-button.completed').length;
             const progress = Math.round((completedCount / topicButtons.length) * 100);
 
             if (progressText) progressText.textContent = `${progress}%`;
             if (progressFill) progressFill.style.width = `${progress}%`;
-            if (nextChallenge && progress === 100) nextChallenge.classList.add('show');
+            if (nextChallenge) nextChallenge.classList.toggle('show', progress === 100);
         });
     });
 });
