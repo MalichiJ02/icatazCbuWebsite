@@ -2877,3 +2877,149 @@ button {
     }
 
 }
+/* ========================================
+   GUIDE PAGE V2
+======================================== */
+
+
+/* COMPLETION ACTIONS */
+
+.guide-next-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   GUIDE JOURNEY
+======================================== */
+
+.guide-journey {
+    max-width: 1200px;
+
+    margin: 100px auto 0;
+
+    padding-top: 80px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.guide-journey-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+
+.guide-journey-card {
+    min-height: 250px;
+
+    padding: 30px 25px;
+
+    background: #0d0d0d;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.guide-journey-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--blue);
+
+    background: #101010;
+}
+
+
+.guide-journey-card span {
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.guide-journey-card h3 {
+    color: white;
+
+    font-size: 25px;
+
+    margin: 30px 0 15px;
+}
+
+
+.guide-journey-card p {
+    color: var(--grey);
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   GUIDE RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .guide-journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .guide-journey-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .guide-next-actions {
+        flex-direction: column;
+    }
+
+
+    .guide-next-actions .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .guide-journey {
+        margin-top: 70px;
+
+        padding-top: 60px;
+    }
+
+
+    .guide-journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .guide-journey-card,
+    .guide-journey-card:last-child {
+        grid-column: auto;
+
+        min-height: auto;
+    }
+
+}
