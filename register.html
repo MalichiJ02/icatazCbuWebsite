@@ -130,197 +130,144 @@
                 </p>
 
 
-                <form id="eventRegistrationForm">
+                <form
+    id="eventRegistrationForm"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSdpSJAYjRENSSZSgS6ghPyyrgbVlOk4mUeOMAVUjmDB1yc21w/formResponse"
+    method="POST"
+    target="hidden_iframe"
+>
 
-                    <!-- NAME -->
-                    <div class="form-group">
+    <!-- NAME -->
+    <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input
+            type="text"
+            id="fullName"
+            name="entry.203194491"
+            placeholder="Your full name"
+            required>
+    </div>
 
-                        <label for="fullName">
-                            Full Name *
-                        </label>
+    <!-- STUDENT ID -->
+    <div class="form-group">
+        <label for="studentId">Student ID</label>
+        <input
+            type="text"
+            id="studentId"
+            name="entry.2106004712"
+            placeholder="e.g. 23123456">
+    </div>
 
-                        <input
-                            type="text"
-                            id="fullName"
-                            name="fullName"
-                            placeholder="Your full name"
-                            required>
+    <!-- PROGRAMME -->
+    <div class="form-group">
+        <label for="programme">Programme *</label>
+        <input
+            type="text"
+            id="programme"
+            name="entry.1083462841"
+            placeholder="e.g. Computer Science"
+            required>
+    </div>
 
-                    </div>
+    <!-- YEAR -->
+    <div class="form-group">
+        <label for="year">Year of Study *</label>
 
+        <select
+            id="year"
+            name="entry.1182717705"
+            required>
 
-                    <!-- STUDENT ID -->
-                    <div class="form-group">
+            <option value="">Select your year</option>
+            <option value="first year">1st Year</option>
+            <option value="second year">2nd Year</option>
+            <option value="third year">3rd Year</option>
+            <option value="fourth year">4th Year</option>
+            <option value="fifth year">5th Year</option>
+            <option value="Other">Other</option>
 
-                        <label for="studentId">
-                            Student ID
-                        </label>
+        </select>
+    </div>
 
-                        <input
-                            type="text"
-                            id="studentId"
-                            name="studentId"
-                            placeholder="e.g. 23123456">
+    <!-- EMAIL -->
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input
+            type="email"
+            id="email"
+            name="entry.1724585427"
+            placeholder="yourname@example.com"
+            required>
+    </div>
 
-                    </div>
+    <!-- WHATSAPP -->
+    <div class="form-group">
+        <label for="phone">WhatsApp Number *</label>
+        <input
+            type="tel"
+            id="phone"
+            name="entry.2140467203"
+            placeholder="e.g. 097XXXXXXX"
+            required>
+    </div>
 
+    <!-- EXPERIENCE -->
+    <div class="form-group">
+        <label for="experience">
+            Web Development Experience *
+        </label>
 
-                    <!-- PROGRAMME -->
-                    <div class="form-group">
+        <select
+            id="experience"
+            name="entry.385110697"
+            required>
 
-                        <label for="programme">
-                            Programme *
-                        </label>
+            <option value="">Select your experience</option>
 
-                        <input
-                            type="text"
-                            id="programme"
-                            name="programme"
-                            placeholder="e.g. Computer Science"
-                            required>
+            <option value="Complete beginner">
+                Complete beginner
+            </option>
 
-                    </div>
+            <option value="I have tried HTML/CSS before">
+                I have tried HTML/CSS before
+            </option>
 
+            <option value="I am already comfortable with the basics">
+                I am already comfortable with the basics
+            </option>
 
-                    <!-- YEAR -->
-                    <div class="form-group">
+        </select>
+    </div>
 
-                        <label for="year">
-                            Year of Study *
-                        </label>
+    <!-- AGREEMENT -->
+    <div class="form-check">
+        <input
+            type="checkbox"
+            id="attendanceAgreement"
+            required>
 
-                        <select
-                            id="year"
-                            name="year"
-                            required>
+        <label for="attendanceAgreement">
+            I intend to attend the session and understand
+            that registration helps ICTAZ CBU plan for participants.
+        </label>
+    </div>
 
-                            <option value="">
-                                Select your year
-                            </option>
+    <!-- BUTTON -->
+    <button
+        type="submit"
+        class="btn registration-submit">
 
-                            <option value="1">
-                                1st Year
-                            </option>
+        Register for Chapter 01
 
-                            <option value="2">
-                                2nd Year
-                            </option>
+    </button>
 
-                            <option value="3">
-                                3rd Year
-                            </option>
+</form>
 
-                            <option value="4">
-                                4th Year
-                            </option>
-
-                            <option value="5">
-                                5th Year
-                            </option>
-
-                            <option value="other">
-                                Other
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <!-- EMAIL -->
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email Address *
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="yourname@example.com"
-                            required>
-
-                    </div>
-
-
-                    <!-- WHATSAPP -->
-                    <div class="form-group">
-
-                        <label for="phone">
-                            WhatsApp Number *
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="e.g. 097XXXXXXX"
-                            required>
-
-                    </div>
-
-
-                    <!-- EXPERIENCE -->
-                    <div class="form-group">
-
-                        <label for="experience">
-                            Web Development Experience *
-                        </label>
-
-                        <select
-                            id="experience"
-                            name="experience"
-                            required>
-
-                            <option value="">
-                                Select your experience
-                            </option>
-
-                            <option value="beginner">
-                                Complete beginner
-                            </option>
-
-                            <option value="some">
-                                I have tried HTML/CSS before
-                            </option>
-
-                            <option value="comfortable">
-                                I am already comfortable with the basics
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <!-- AGREEMENT -->
-                    <div class="form-check">
-
-                        <input
-                            type="checkbox"
-                            id="attendanceAgreement"
-                            required>
-
-                        <label for="attendanceAgreement">
-                            I intend to attend the session and understand
-                            that registration helps ICTAZ CBU plan for participants.
-                        </label>
-
-                    </div>
-
-
-                    <!-- BUTTON -->
-                    <button
-                        type="submit"
-                        class="btn registration-submit">
-
-                        Register for Chapter 01
-
-                    </button>
-
-                </form>
-
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display:none;">
+</iframe>
 
                 <!-- SUCCESS MESSAGE -->
                 <div
