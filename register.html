@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HC9DWWQ4GY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-HC9DWWQ4GY');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | ICTAZ CBU</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            ICTAZ <span>CBU</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="guide.html">Guide</a>
+            <a href="activities.html" class="active">Activities</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="join.html">Join</a>
+        </div>
+    </nav>
+
+
+    <main class="registration-page">
+
+        <!-- PAGE INTRO -->
+        <section class="registration-heading">
+
+            <p class="page-label">
+                ICTAZ CBU • FULL STACK DEVELOPMENT SERIES
+            </p>
+
+            <h1>
+                Register for Chapter 01
+            </h1>
+
+            <p>
+                Build Your First Portfolio
+            </p>
+
+        </section>
+
+
+        <section class="registration-layout">
+
+            <!-- EVENT SUMMARY -->
+            <aside class="registration-event">
+
+                <p class="section-label">
+                    CHAPTER 01
+                </p>
+
+                <h2>
+                    Build Your First Portfolio
+                </h2>
+
+                <p>
+                    A beginner-friendly hands-on workshop where you will
+                    build and personalize your own portfolio website using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <div class="registration-event-details">
+
+                    <div>
+                        <span>DAY</span>
+                        <strong>Friday</strong>
+                    </div>
+
+                    <div>
+                        <span>TIME</span>
+                        <strong>14:00 – 15:30</strong>
+                    </div>
+
+                    <div>
+                        <span>VENUE</span>
+                        <strong>To Be Confirmed</strong>
+                    </div>
+
+                    <div>
+                        <span>LEVEL</span>
+                        <strong>Beginner Friendly</strong>
+                    </div>
+
+                </div>
+
+                <div class="event-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </aside>
+
+
+            <!-- REGISTRATION FORM -->
+            <section class="registration-form-container">
+
+                <p class="section-label">
+                    YOUR DETAILS
+                </p>
+
+                <h2>
+                    Reserve your place.
+                </h2>
+
+                <p class="form-intro">
+                    Fill in your details below to register for the session.
+                </p>
+
+
+                <form id="eventRegistrationForm">
+
+                    <!-- NAME -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Your full name"
+                            required>
+
+                    </div>
+
+
+                    <!-- STUDENT ID -->
+                    <div class="form-group">
+
+                        <label for="studentId">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            name="studentId"
+                            placeholder="e.g. 23123456">
+
+                    </div>
+
+
+                    <!-- PROGRAMME -->
+                    <div class="form-group">
+
+                        <label for="programme">
+                            Programme *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="programme"
+                            name="programme"
+                            placeholder="e.g. Computer Science"
+                            required>
+
+                    </div>
+
+
+                    <!-- YEAR -->
+                    <div class="form-group">
+
+                        <label for="year">
+                            Year of Study *
+                        </label>
+
+                        <select
+                            id="year"
+                            name="year"
+                            required>
+
+                            <option value="">
+                                Select your year
+                            </option>
+
+                            <option value="1">
+                                1st Year
+                            </option>
+
+                            <option value="2">
+                                2nd Year
+                            </option>
+
+                            <option value="3">
+                                3rd Year
+                            </option>
+
+                            <option value="4">
+                                4th Year
+                            </option>
+
+                            <option value="5">
+                                5th Year
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="yourname@example.com"
+                            required>
+
+                    </div>
+
+
+                    <!-- WHATSAPP -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            WhatsApp Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="e.g. 097XXXXXXX"
+                            required>
+
+                    </div>
+
+
+                    <!-- EXPERIENCE -->
+                    <div class="form-group">
+
+                        <label for="experience">
+                            Web Development Experience *
+                        </label>
+
+                        <select
+                            id="experience"
+                            name="experience"
+                            required>
+
+                            <option value="">
+                                Select your experience
+                            </option>
+
+                            <option value="beginner">
+                                Complete beginner
+                            </option>
+
+                            <option value="some">
+                                I have tried HTML/CSS before
+                            </option>
+
+                            <option value="comfortable">
+                                I am already comfortable with the basics
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- AGREEMENT -->
+                    <div class="form-check">
+
+                        <input
+                            type="checkbox"
+                            id="attendanceAgreement"
+                            required>
+
+                        <label for="attendanceAgreement">
+                            I intend to attend the session and understand
+                            that registration helps ICTAZ CBU plan for participants.
+                        </label>
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+                    <button
+                        type="submit"
+                        class="btn registration-submit">
+
+                        Register for Chapter 01
+
+                    </button>
+
+                </form>
+
+
+                <!-- SUCCESS MESSAGE -->
+                <div
+                    id="registrationSuccess"
+                    class="registration-success"
+                    hidden>
+
+                    <span class="success-icon">
+                        ✓
+                    </span>
+
+                    <h3>
+                        Registration successful!
+                    </h3>
+
+                    <p>
+                        You're registered for
+                        <strong>Chapter 01: Build Your First Portfolio.</strong>
+                    </p>
+
+                    <p>
+                        Friday • 14:00–15:30
+                    </p>
+
+                    <p>
+                        Venue information will be communicated once confirmed.
+                    </p>
+
+                    <a href="activities.html" class="btn">
+                        Back to Activities
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            © 2026 ICTAZ CBU Lusaka Campus
+        </p>
+
+        <p>
+            Learn. Build. Connect. Contribute. Lead.
+        </p>
+
+        <div class="social-links" aria-label="Social media links">
+
+            <a
+                href="https://chat.whatsapp.com/CK21gve3SarLsWbLvcBJWa"
+                target="_blank"
+                rel="noopener noreferrer">
+                WhatsApp
+            </a>
+
+            <a
+                href="https://www.instagram.com/ictazcbulsk?utm_source=qr&amp;stkn=MmcwN2N1dWViOWpy"
+                target="_blank"
+                rel="noopener noreferrer">
+                Instagram
+            </a>
+
+            <a
+                href="https://www.facebook.com/share/1Fq2WLY2Lz/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Facebook
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
